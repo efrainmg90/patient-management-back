@@ -67,7 +67,7 @@ public class EspecialidadController {
 			return new ResponseEntity<Object>("Not found id: "+id,HttpStatus.NOT_FOUND);
 		} else {
 			service.eliminar(id);
-			return new ResponseEntity<Object>("Delete succesfully with id: "+id,HttpStatus.OK);
+			return new ResponseEntity<Object>("{\"message\": \"Delete succefully with id: "+id+"\"}",HttpStatus.OK);
 		}
 	}
 }
