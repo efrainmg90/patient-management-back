@@ -16,7 +16,7 @@ public class ConsultaExamen {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idConsultaExamen;
 
-	@JsonIgnore
+	
 	@ManyToOne
 	@JoinColumn(name = "id_examen", nullable = false)
 	private Examen examen;
